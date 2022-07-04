@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/trybe-14-tunes/static/css/main.ee660c1a.css",
+    "main.js": "/trybe-14-tunes/static/js/main.659c7f57.js",
+    "static/media/trybe.png": "/trybe-14-tunes/static/media/trybe.4b9d4208c20b8a9df2ce.png",
+    "index.html": "/trybe-14-tunes/index.html",
+    "main.ee660c1a.css.map": "/trybe-14-tunes/static/css/main.ee660c1a.css.map",
+    "main.659c7f57.js.map": "/trybe-14-tunes/static/js/main.659c7f57.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee660c1a.css",
+    "static/js/main.659c7f57.js"
+  ]
+}

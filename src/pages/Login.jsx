@@ -23,7 +23,7 @@ class Login extends React.Component {
 
   mudaEstiloBotao = () => {
     const { habilitaBtnLogin } = this.state;
-    const classeBotao = habilitaBtnLogin ? 'btn-disabled-login' : 'btn-login';
+    const classeBotao = habilitaBtnLogin ? 'bg-light text-dark' : 'bg-dark text-white';
     return classeBotao;
   }
 
@@ -43,31 +43,32 @@ class Login extends React.Component {
     }
     return (
       <div data-testid="page-login" className="flex flex-row min-h-screen relative">
-        <div className="object-cover w-screen h-screen absolute">
-          <img src="https://images.unsplash.com/photo-1539375665275-f9de415ef9ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=878&q=80" className="h-screen w-screen object-cover" alt=""/>
+        <div className="w-full h-screen absolute">
+          <img src={require("../images/musica.jpg")} className="h-screen w-full object-cover absolute" alt=""/>
         </div>
-        <div className="w-full flex items-center justify-center bg-gray-300">
-          <div className="1/2 lg:w-2/6 h-2/4 bg-lilas drop-shadow-xl rounded flex flex-col justify-center items-center relative z-10 rounded-l">
-            <div className="flex flex-row items-center justify-center">
-              <img src={require('../images/trybe.png')} alt="" className="w-12 pb-3 mr-3 sm:mr-5" />
-              <p className="text-white text-2xl font-bold">TrybeTunes</p>
+        <div className="w-full flex items-center h-screen justify-center">
+          <div className="lg:w-1/5 h-70 bg-white border drop-shadow-xl rounded flex flex-col justify-around items-center relative z-10">
+            <div className="flex flex-row items-center justify-center w-full h-1/2">
+              <img src={require('../images/trybe-dark.png')} alt="" className="w-10 pb-3 mr-3 sm:mr-5" />
+              <p className="text-dark text-2xl font-bold">TrybeTunes</p>
             </div>
-            <label htmlFor="input-login" className="w-10/12 mt-2 text-gray-500 text-center">
+            <div className="w-9/12 flex flex-col justify-center">
+            <label htmlFor="input-login" className="w-full mt-1 text-dark text-left">
               <input
                 type="text"
                 data-testid="login-name-input"
                 value={ nomeDigitado }
                 name="input-login"
                 id="input-login"
-                className="bg-gray-300 p-2 mt-2 w-full text-center text-black"
                 placeholder="Login"
+                className="bg-light rounded-full border-bottom p-2 w-full text-center text-black"
                 onChange={ this.verificaTamanho }
               />
             </label>
             <button
               type="button"
               data-testid="login-submit-button"
-              className={ `${this.mudaEstiloBotao()} -10/12 mt-6 p-2 rounded h-1/5 bg-gray-300 w-10/12` }
+              className={ `${this.mudaEstiloBotao()} mt-3 p-2 mb-5 rounded-full transition duration-1000` }
               disabled={ habilitaBtnLogin }
               onClick={ this.salvaNome }
             >
@@ -75,6 +76,7 @@ class Login extends React.Component {
                 Entrar
               </strong>
             </button>
+            </div>
           </div>
         </div>
       </div>

@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
   render() {
+    const { classe } = this.props;
     return (
-      <header data-testid="header-component" className="menu-principal">
+      <header data-testid="header-component" className={`${classe} flex-rol flex-wrap justify-center items-center font-bold text-dark`}>
         <Link
           to="/search"
-          className="links-menu"
+          className="px-3"
           data-testid="link-to-search"
         >
           Pesquisar
@@ -15,7 +16,7 @@ class Header extends React.Component {
         <span>|</span>
         <Link
           to="/favorites"
-          className="links-menu"
+          className="px-3"
           data-testid="link-to-favorites"
         >
           Favoritos
@@ -23,7 +24,7 @@ class Header extends React.Component {
         <span>|</span>
         <Link
           to="/profile"
-          className="links-menu"
+          className="px-3 "
           data-testid="link-to-profile"
         >
           Perfil

@@ -40,3 +40,8 @@
 	-webkit-text-stroke-width: 1px; /* largura da borda */
 	-webkit-text-stroke-color: #000;
 }
+
+body {
+
+	background-color: #b5c6eb,
+}

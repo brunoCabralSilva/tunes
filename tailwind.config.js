@@ -19,6 +19,7 @@ module.exports = {
         'light': '#d1daed',
         'dark': '#0D0F26',
         'more-dark': '#070813',
+        'light-blue': '#b5c6eb',
       },
       spacing: {
         '40p': '40%',

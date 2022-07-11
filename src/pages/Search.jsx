@@ -150,7 +150,7 @@ class Search extends React.Component {
     const frase = 'Nenhum álbum foi encontrado';
     if (carregando === true) return (<Carregando bg="bg-party" />);
     return (
-      <div data-testid="page-search" className="relative min-h-100vh bg-party bg-no-repeat bg-cover bg-center bg-fixed">
+      <div data-testid="page-search" className="min-h-100vh relative bg-party bg-no-repeat bg-cover bg-center bg-fixed">
         <div className="w-full h-full bg-half-transparent justify-center items-center absolute z-10"></div>
         { this.retornaInputOuCarregando() }
         { vazio === true

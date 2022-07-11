@@ -1,10 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Header from '../components/Header';
-import Usuario from '../components/Usuario';
 import Carregando from '../components/Carregando';
 import { getUser } from '../services/userAPI';
-import logo from '../images/trybe.png';
 
 class Profile extends React.Component {
   state = {
@@ -33,13 +30,13 @@ class Profile extends React.Component {
     }
     console.log(dadosUsuario);
     const perfil = (
-      <div className="flex justify-center h-80p items-center text-dark">
-        <div className="w-60 bg-light z-20 rounded-xl flex flex-col justify-center px-5 pt-5">
+      <div className="flex justify-center h-80p items-center text-dark mt-8">
+        <div className="w-80 bg-light z-20 rounded-xl flex flex-col justify-center px-5 pt-5">
           <img
             src={ dadosUsuario.image }
             data-testid="profile-image"
             alt="imagem de perfil"
-            className="rounded-t-lg"
+            className="w-56 mx-auto h-56 rounded-full object-cover"
           />
         <div className="flex flex-col">
           <p className="w-full text-center pt-3 pb-2"><strong>Perfil</strong></p>
@@ -65,7 +62,7 @@ class Profile extends React.Component {
               <span className="break-all">{ dadosUsuario.description }</span>
             </div>
           </div>
-            '<button onClick={ this.return } className="w-full bg-dark text-white p-3">
+            '<button onClick={ this.return } className="w-full bg-dark text-white p-3 hover:font-bold hover:bg-more-dark transition duration-500 font-normal">
               Editar perfil
             </button>'
           </div>
@@ -77,7 +74,7 @@ class Profile extends React.Component {
 
   render() {
     return (
-      <div data-testid="page-profile" className="h-screen bg-cover bg-fixed bg-party-4 relative">        
+      <div data-testid="page-profile" className="min-h-100vh bg-cover bg-fixed bg-party-4 relative">        
       <div className="w-full h-full bg-half-transparent justify-center items-center absolute z-10" />
           <Header />
         { this.retornaDadosUsuario() }

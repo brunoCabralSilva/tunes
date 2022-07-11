@@ -69,13 +69,13 @@ class ProfileEdit extends React.Component {
     }
 
     const perfil = (
-        <div className="flex justify-center h-80p items-center text-dark">
-        <div className="w-60 bg-light z-20 rounded-xl flex flex-col justify-center px-5 pt-5">
+        <div className="flex justify-center items-center text-dark mt-8">
+        <div className="w-80 bg-light z-20 rounded-xl flex flex-col justify-center px-5 pt-5 mb-8">
           <img
             src={ textoImage }
             data-testid="profile-image"
             alt="imagem de perfil"
-            className="rounded-t-lg"
+            className="w-56 mx-auto h-56 rounded-full object-cover"
           />
         <div className="flex flex-col">
           <p className="w-full text-center pt-3 pb-2"><strong>Editar Perfil</strong></p>
@@ -137,7 +137,7 @@ class ProfileEdit extends React.Component {
                   data-testid="edit-button-save"
                   disabled={ this.habilitaBotao() }
                   onClick={ this.salvaDados }
-                  className="w-full bg-dark text-white p-3"
+                  className="w-full bg-dark text-white p-3 font-normal hover:font-bold hover:bg-more-dark transition duration-500"
                 >
                   Editar perfil
                 </button>'
@@ -149,7 +149,7 @@ class ProfileEdit extends React.Component {
 
   render() {
     return (
-      <div data-testid="page-profile" className="h-screen bg-cover bg-fixed bg-party-4 relative">        
+      <div data-testid="page-profile" className="min-h-100vh bg-cover bg-fixed bg-party-4 relative">        
       <div className="w-full h-full bg-half-transparent justify-center items-center absolute z-10" />
           <Header />
         <div>

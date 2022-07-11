@@ -60,12 +60,17 @@ class Favorites extends React.Component {
 
   render() {
     return (
-      <div data-testid="page-favorites" className="h-screen bg-cover bg-fixed bg-party-3 relative">
+      <div data-testid="page-favorites" className="min-h-100vh bg-cover bg-fixed bg-party-3 relative">
         <div className="w-full h-full bg-half-transparent justify-center items-center absolute z-10"></div>
         <Header />
-        <div className="">
+        <div className="md:p-6 lg:p-7 min-h-100vh">
+        <p data-testid="artist-name" className="text-white text-center text-2xl py-6 z-20 relative">
+          Favoritos
+        </p>
+        <div className="flex flex-row flex-wrap justify-center">
           { this.retornaExibicao() }
         </div>
+      </div>
       </div>
 
     );

@@ -42,12 +42,9 @@ class Album extends React.Component {
       return listaMusicas;
     });
     return (
-      <div className="sm:ml-7 md:p-6 lg:p-7">
-        <p data-testid="artist-name" className="text-white text-center sm:text-left sm:ml-4 text-2xl mt-4">
-          { artista }
-        </p>
-        <p data-testid="album-name" className="text-white text-center sm:text-left sm:ml-4 text-2xl my-5">
-          { album }
+      <div className="md:p-6 lg:p-7 min-h-100vh">
+        <p data-testid="artist-name" className="text-white text-center text-2xl py-8 mt-4">
+          {`${artista} - ${album} `}
         </p>
         <div className="flex flex-row flex-wrap justify-center">
           { cadaMusica }
@@ -58,7 +55,7 @@ class Album extends React.Component {
 
   render() {
     return (
-      <div className="min-h-screen bg-cover bg-fixed bg-party-2 relative">
+      <div className="min-h-100vh bg-cover bg-fixed bg-party-2 relative">
         <div className="bg-half-transparent w-full h-full absolute z-10"></div>
         <div className="z-20 relative">
           <Header />

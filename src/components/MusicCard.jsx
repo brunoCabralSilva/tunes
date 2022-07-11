@@ -70,7 +70,7 @@ class MusicCard extends React.Component {
       </div>);
     }
     return (
-      <div className="bg-black m-2 w-11/12 sm:w-45% md:w-30% lg:w-23% text-white rounded flex flex-row-reverse justify-between">
+      <div className="bg-black m-2 w-11/12 sm:w-45% md:w-30% lg:w-23% text-white rounded flex flex-row-reverse justify-between z-20 relative">
         <div className="div-musicas-description flex flex-col-reverse w-3/5 align-between justify-between">
           <audio
             data-testid="audio-component"

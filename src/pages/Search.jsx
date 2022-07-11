@@ -15,6 +15,10 @@ class Search extends React.Component {
     carregando: false,
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   mudaEstiloBotao = () => {
     const { habilitaBtnPesquisa } = this.state;
     const classeBotao = habilitaBtnPesquisa ? 'bg-light text-dark border-dark' : 'border-white bg-dark text-white';

@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+<h1 align="center">Trybe Tunes</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">Décimo quarto projeto de trybe com o objetivo de avaliação em diversos quesitos do curso, sendo eles: 
 
-## Available Scripts
+<ul>
+    <li>Fazer requisições e consumir dados vindos de uma API;</li>
+    <li>Utilizar os ciclos de vida de um componente React;</li>
+    <li>Utilizar a função setState de forma a garantir que um determinado código só é executado após o estado ser   atualizado;</li>
+    <li>Utilizar o componente BrowserRouter corretamente;</li>
+    <li>Criar rotas, mapeando o caminho da URL com o componente correspondente, via Route;</li>
+    <li>Utilizar o Switch do React Router;</li>
+    <li>Usar o componente Redirect pra redirecionar para uma rota específica;</li>
+    <li>Criar links de navegação na aplicação com o componente Link.</li>
+<ul>
 
-In the project directory, you can run:
+<p>Para tal, foi desenvolvida uma aplicação capaz de reproduzir músicas das mais variadas bandas e artistas, além de uma lista de músicas favoritas e possibilidade de edição de perfil da pessoa usuária logada. Dentre todas as funções da aplicação, destacam-se:</p>
 
-### `npm start`
+<ul>
+    <li>Fazer login;</li>
+    <li>Pesquisar por uma banda ou artista;</li>
+    <li>Listar os álbuns disponíveis dessa banda ou artista</li>;
+    <li>Visualizar as músicas de um álbum selecionado;</li>
+    <li>Reproduzir uma prévia das músicas deste álbum;</li>
+    <li>Favoritar e desfavoritar músicas;</li>
+    <li>Ver a lista de músicas favoritas;</li>
+    <li>Ver o perfil da pessoa logada;</li>
+    <li>Editar o perfil da pessoa logada.</li>
+</ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h3 align="center">https://brunocabralsilva.github.io/trybe-14-tunes/login.png</h3>
 
-### `npm test`
+![Tela Inicial da Aplicação](src/images/menu/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Menu principal](src/images/menu/apresentation02.png)
 
-### `npm run build`
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h2> Índice</h2>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* [Introdução](#intro)
+* [Descrição do Projeto](#descrição-do-projeto)
+* [Mapeamento do Site](#mapeamento)
+* [Tecnologias utilizadas](#tecnologias-utilizadas)
+* [Desenvolvedores e demais contribuidores](#pessoas-envolvidas)
+* [Conclusão](#conclusão)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h2 id="intro">Introdução</h2>
 
-### `npm run eject`
+<p>Role-playing game, também conhecido como RPG, é um tipo de jogo em que os jogadores assumem papéis de personagens e criam narrativas geralmente colaborativas. O progresso de um jogo se dá de acordo com um sistema de regras predeterminado, dentro das quais os jogadores podem improvisar livremente. É aí que entra o sistema de RPG <strong>World of Darkness</strong>.</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p><strong>World of Darkness</strong> é nome dado a dois universos ficcionais relacionados, mas distintos, criados como configurações de campanha para role-playing games de horror originalmente da editora estadunidense White Wolf. O primeiro foi concebido por Mark Rein-Hagen, enquanto o segundo foi projetado por várias pessoas da White Wolf Gaming Studio, que Rein-Hagen ajudou a criar.</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p>Dentro do <strong>World of Darkness</strong> o jogo de <strong>Lobisomem: O Apocalipse</strong> é um dos muitos jogos possíveis e existentes na franquia, tendo sido este publicado no Brasil pela Devir Livraria. É um dos mais conhecidos títulos da série e usa o sistema Storyteller para o desenvolvimento e a interpretação dos fatos e eventos.</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p>Por existir uma quantidade enorme de livros de <strong>Lobisomem: O Apocalipse</strong> como resultado de complementos das versões básicas do cenário, fica difícil ou no mínimo moroso pesquisar por entre estes informações a serem adicionadas nas fichas de cada personagem. Visando este déficit, decidimos criar uma aplicação que ajude nessas buscas, economizando tempo dos jogadores e auxiliando de forma eficaz em encontrar as informações requeridas.</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<h2 id="descrição-do-projeto">Descrição do Projeto</h2>
 
-## Learn More
+<p>O Guia das Matilhas é um projeto onde, por meio de pouquíssimo ou quase nenhum esforço, o usuário poderá encontrar listas de dons, fetiches, rituais, entre outras informações, podendo filtrá-las para visualizar apenas o que busca.
+</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h2 id="mapeamento">Mapeamento do site </h2>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<ol>
+<li><h4>Menu Principal</h4></li> 
 
-### Code Splitting
+<p>Lugar de acesso a diversas das informações do site. Por meio desta página, é possível ser direcionado para as páginas Dons, Rituais, Fetiches, Parceiros, Garou Nordeste e Matilha da Kombi.</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p> </p>
 
-### Analyzing the Bundle Size
+<li><h4>Dons</h4></li> 
+<p>Na página é possível encontrar uma breve descrição do que são os dons, além de ser possível utilizar os filtros de busca, que podem ser maximixados para que se escolham itens de cada lista. As aludidas listas são cinco:</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<ul>
+<li>Raça;</li>
+<li>Tribo;</li>
+<li>Augúrio;</li>
+<li>Posto;</li>
+<li>Livro.</li>
+</ul>
+<br>
+<p>Ao clicar uma vez, o item da lista selecionado é adicionado e pode ser visualizado em um pop-up no canto superior direito da tela. Ele pode ser removido clicando novamente no ícone ou desmarcando o checkbox referente ao mesmo no pop-up.</p>
+<p>Ao clicar em buscar, a aplicação retorna uma lista com todos os dons que se adequam aos filtros selecionados.</p>
 
-### Making a Progressive Web App
+<li><h4>Rituais</h4></li>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p> Área do site ainda em processo de construção.</p>
 
-### Advanced Configuration
+<li><h4>Fetiches</h4></li>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<p> Área do site ainda em processo de construção.</p>
 
-### Deployment
+<li><h4>Parceiros</h4></li>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<p>Nesta página é disponibilizada uma lista de todos os parceiros dos grupos ao qual os desenvolvedores pertencem ou possuem uma grande proximidade. É possível encontrar todos os links de contato com estes parceiros, além de uma breve descrição dos mesmos e uma imagem da logo que os representa.</p>
 
-### `npm run build` fails to minify
+<li><h4>Garou Nordeste</h4></li>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p> Área do site ainda em processo de construção.</p>
+
+<li><h4>Matilha da Kombi</h4></li>
+
+<p> Área do site ainda em processo de construção.</p>
+
+<li><h4>Tribos</h4></li>
+
+<p> Área do site onde são disponibilizadas as dezessete tribos para consulta. Em uma lista no formato carrossel, o usuário poderá navegar entre as imagens de cada tribo, além de, no futuro, ter acesso a informações sobre a tribo ao clicar em uma delas.</p>
+
+<li><h4>Augúrios</h4></li>
+
+<p> Área do site onde são disponibilizados os cinco Augúrios para consulta. Em uma lista no formato carrossel, o usuário poderá navegar entre as imagens de cada augúrio, além de, no futuro, ter acesso a informações ao clicar em uma delas.</p>
+
+<li><h4>Raças</h4></li>
+
+<p> Área do site onde são disponibilizadas as três raças para consulta. Em uma lista no formato carrossel, o usuário poderá navegar entre as imagens de cada raça, além de, no futuro, ter acesso a informações e pontos de vista dos autores ao clicar em um deles.</p>
+
+<li><h4>Quem Somos</h4></li>
+
+<p> Lugar reservado para falarmos um pouco a respeito de quem somos, quem são nossos grupos e como tudo começou, além de serem compartilhados todos os nossos links de contato.</p>
+
+</ol>
+
+<h2 id="tecnologias-utilizadas">Tecnologias utilizadas</h2>
+
+* `HTML5`
+* `CSS3`
+* `Javascript (ECMAScript 2018)`
+* `React`
+* `React Icons`
+* `React Router Dom`
+* `Framer Motion`
+* `Bootstrap CSS`
+* `Font Awesome`
+
+<h2 id="pessoas-envolvidas">Desenvolvedores e demais contribuidores</h2>
+
+* <strong>Bruno Gabryell Cabral da Silva</strong> - Desenvolvedor Web;
+* <strong>Thiago Lucas Martins da Silva</strong> - Tradutor e transcritor dos textos dos livros nos arquivos JSON;
+* <strong>Erika Emanuelly da Silva Cruz</strong> - Experiência do Usuário;
+* <strong>Patrick Cosme de Oliveira</strong> - Experiência do Usuário;
+
+<h2 id="conclusão">Conclusão</h2>
+
+<p>Programar é um eterno aprendizado. Quanto mais se pratica, mais se melhora. Praticar conceitos de programação com coisas que se é apaixonado apimenta ainda mais a relação! Muitos aprendizados novos são adicionados a cada dia, fazendo com que este projeto já tenha valido a pena antes mesmo de ser concluído!</p>

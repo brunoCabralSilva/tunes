@@ -13,6 +13,7 @@ class Album extends React.Component {
   }
 
   async componentDidMount() {
+    window.scrollTo(0, 0);
     const { match } = this.props;
     const { params } = match;
     const { id } = params;
@@ -44,7 +45,7 @@ class Album extends React.Component {
     });
     return (
       <div className="md:p-6 lg:p-7 min-h-100vh">
-        <p data-testid="artist-name" className="text-white text-center text-2xl py-8 mt-4">
+        <p data-testid="artist-name" className="text-white text-center text-2xl py-8 mx-auto w-11/12">
           {`${artista} - ${album} `}
         </p>
         <div className="flex flex-row flex-wrap justify-center">

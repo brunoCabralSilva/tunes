@@ -12,6 +12,7 @@ class Favorites extends React.Component {
   }
 
   async componentDidMount() {
+    window.scrollTo(0, 0);
     this.setState({ carregando: true });
     const favoritos = await getFavoriteSongs();
     this.setState({

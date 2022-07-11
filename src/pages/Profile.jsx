@@ -11,6 +11,7 @@ class Profile extends React.Component {
   }
 
   async componentDidMount() {
+    window.scrollTo(0, 0);
     this.setState({ carregando: true });
     const perfil = await getUser();
     this.setState({
@@ -32,7 +33,7 @@ class Profile extends React.Component {
     console.log(dadosUsuario);
     const perfil = (
       <div className="flex justify-center  min-h-100vh items-center text-dark">
-        <div className="w-80 bg-light z-20 rounded-xl flex flex-col justify-center px-5 pt-5">
+        <div className="w-80 bg-light z-20 rounded-xl flex flex-col justify-center px-5 pt-3">
           <img
             src={ dadosUsuario.image }
             data-testid="profile-image"

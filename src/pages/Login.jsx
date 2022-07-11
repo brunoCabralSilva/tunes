@@ -10,6 +10,10 @@ class Login extends React.Component {
     carregando: false,
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   verificaTamanho = ({ target }) => {
     const { value } = target;
     const minimo = 3;

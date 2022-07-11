@@ -16,6 +16,7 @@ class ProfileEdit extends React.Component {
 
   async componentDidMount() {
     this.setState({ carregando: true });
+    window.scrollTo(0, 0);
     const perfil = await getUser();
     this.setState({
       textoNome: perfil.name,

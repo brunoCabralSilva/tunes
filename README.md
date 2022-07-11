@@ -64,7 +64,7 @@
 <p>Área destinada para pesquisar por uma música, artista ou álbum. Ao clicar em pesquisar, todos os álbuns que correspondem ao que foi digitado são exibidos.</p>
 
 <li><h4>Álbum</h4></li>
-<p>Caso o usuário clique em algum dos ícones que foram exibidos como resultado da busca na ppágina de pesquisa, ele será direcionado para uma nova página onde serão exibidas todas as faixas do álbum relacionado ao ícone clicado. Nesta área é possível ouvir uma prévia de cada uma das faixas, além de favoritar ou desfavoritar a música. Ao acessar a página, automaticamente as músicas favoritadas anteriormente já são carregadas como favoritas (o checkbox relacionado à função de favoritar já vem como marcado).
+<p>Caso o usuário clique em algum dos ícones que foram exibidos como resultado da busca na página de pesquisa, ele será direcionado para uma nova página onde serão exibidas todas as faixas do álbum relacionado ao ícone clicado. Nesta área é possível ouvir uma prévia de cada uma das faixas, além de favoritar ou desfavoritar as músicas. Ao acessar a página, automaticamente as músicas favoritadas anteriormente já são carregadas como favoritas (o checkbox relacionado à função de favoritar já vem como marcado).
 
 <li><h4>Favoritos</h4></li>
 
@@ -79,6 +79,7 @@
     <li>Descrição;</li>
     <li>Imagem.</li>
 </ul>
+<br>
 
 <p>Caso o usuário deseje adicionar ou alterar informações do seu cadastro, basta clicar no botão "Editar Perfil.</p>
 

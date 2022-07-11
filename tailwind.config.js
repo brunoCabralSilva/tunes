@@ -33,6 +33,8 @@ module.exports = {
       backgroundImage: {
         'party': 'url("https://images.unsplash.com/photo-1486556396467-d83d2b23514b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")',
         'party-2': 'url("https://images.unsplash.com/photo-1549046675-dd779977de88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=943&q=80")',
+        'party-3': 'url("https://wallpapers.com/images/high/blackout-smoke-party-background-7edl0jkpko5bin2u.jpg")',
+        'party-4': 'url("https://pbs.twimg.com/media/D5-6D3fUYAAT-7h?format=jpg&name=large")',
       }
     },
   },

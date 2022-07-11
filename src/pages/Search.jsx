@@ -101,7 +101,7 @@ class Search extends React.Component {
     });
     return (
       <div className="">
-        <p className="text-2xl sm:text-4xl z-20 text-center w-10/12 sm:pl-16 sm:text-left text-white relative mb-3 sublinhado font-bold mx-auto">
+        <p className="text-2xl sm:text-3xl z-20 text-center w-10/12 text-white relative mb-3 md:mb-7 sublinhado font-bold mx-auto">
           {`Resultado de álbuns de: ${pesquisaSalva}` }
         </p>
         <div className="flex flex-row flex-wrap justify-center w-full z-20">

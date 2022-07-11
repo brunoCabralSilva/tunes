@@ -67,100 +67,91 @@ class ProfileEdit extends React.Component {
     if (carregando === true) {
       return <Carregando />;
     }
+
     const perfil = (
-      <div className="profile-principal">
-        <div className="profile">
-          <div>
-            <img
-              src={ textoImage }
-              id="imagem-profile"
-              data-testid="profile-image"
-              alt="imagem de perfil"
-            />
-          </div>
-        </div>
-        <div className="informations">
-          <div className="profile">
-            <div>
-              <strong>Nome:</strong>
-            </div>
-            <div>
-              <input
-                type="text"
-                name="textoNome"
-                value={ textoNome }
-                data-testid="edit-input-name"
-                className="input-edit-profile"
-                onChange={ this.alteraPerfil }
-              />
+        <div className="flex justify-center h-80p items-center text-dark">
+        <div className="w-60 bg-light z-20 rounded-xl flex flex-col justify-center px-5 pt-5">
+          <img
+            src={ textoImage }
+            data-testid="profile-image"
+            alt="imagem de perfil"
+            className="rounded-t-lg"
+          />
+        <div className="flex flex-col">
+          <p className="w-full text-center pt-3 pb-2"><strong>Editar Perfil</strong></p>
+          <div className="flex-col flex">
+            <div className="flex flex-row">
+              <div>
+                <strong className="pr-1">Nome:</strong>
+                <input
+                  type="text"
+                  name="textoNome"
+                  value={ textoNome }
+                  data-testid="edit-input-name"
+                  className="w-full"
+                  onChange={ this.alteraPerfil }
+                />
+              </div>
             </div>
           </div>
-          <div className="profile">
+          <div className="flex flex-row">
             <div>
-              <strong>E-mail:</strong>
-            </div>
-            <div>
-              <input
-                type="email"
-                name="textoEmail"
-                value={ textoEmail }
-                data-testid="edit-input-email"
-                className="input-edit-profile"
-                onChange={ this.alteraPerfil }
-                pattern=".+@beststartupever\.com"
-              />
-            </div>
-          </div>
-          <div className="profile">
-            <div>
-              <strong>Descrição</strong>
-            </div>
-            <div>
-              <input
-                type="text"
-                name="textoDescription"
-                value={ textoDescription }
-                data-testid="edit-input-description"
-                className="input-edit-profile"
-                onChange={ this.alteraPerfil }
-              />
-            </div>
-          </div>
-          <div className="profile">
-            <strong>Link para Imagem:</strong>
+            <strong className="pr-1">E-mail:</strong>
             <input
+              type="email"
+              name="textoEmail"
+              value={ textoEmail }
+              data-testid="edit-input-email"
+              className="w-full"
+              onChange={ this.alteraPerfil }
+              pattern=".+@beststartupever\.com"
+            />
+            </div>
+          </div>
+          <div className="flex flex-row">
+            <div>
+            <strong className="pr-1">Descrição:</strong>
+            <input
+              type="text"
+              name="textoDescription"
+              value={ textoDescription }
+              data-testid="edit-input-description"
+              className="w-full"
+              onChange={ this.alteraPerfil }
+            />
+            </div>
+          </div>
+          <div className="profile">
+             <strong>Link para Imagem:</strong>
+             <input
               type="text"
               name="textoImage"
               value={ textoImage }
               data-testid="edit-input-image"
-              className="input-edit-profile"
+              className="w-full"
               onChange={ this.alteraPerfil }
             />
           </div>
-          <div className="div-link-edit-profile">
-            <button
-              type="button"
-              data-testid="edit-button-save"
-              disabled={ this.habilitaBotao() }
-              onClick={ this.salvaDados }
-              className="btn-salva-edit-profile"
-            >
-              Editar perfil
-            </button>
+            '<button
+                  type="button"
+                  data-testid="edit-button-save"
+                  disabled={ this.habilitaBotao() }
+                  onClick={ this.salvaDados }
+                  className="w-full bg-dark text-white p-3"
+                >
+                  Editar perfil
+                </button>'
           </div>
         </div>
-      </div>
-    );
-    return perfil;
+      </div>);
+      return perfil;
   }
 
   render() {
     return (
-      <div data-testid="page-profile-edit">
-        <nav className="navigate">
+      <div data-testid="page-profile" className="h-screen bg-cover bg-fixed bg-party-4 relative">        
+      <div className="w-full h-full bg-half-transparent justify-center items-center absolute z-10" />
           <Header />
-          <Usuario />
-        </nav>
         <div>
           { this.retornaDadosUsuario() }
         </div>

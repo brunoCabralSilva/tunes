@@ -60,15 +60,10 @@ class Favorites extends React.Component {
 
   render() {
     return (
-      <div data-testid="page-favorites" className="principal">
-        <div className="barra-superior">
-          <img src={ logo } alt={ logo } className="trybe-barra-superior" />
-          <nav className="navigate">
-            <Header />
-            <Usuario />
-          </nav>
-        </div>
-        <div className="todas-as-musicas">
+      <div data-testid="page-favorites" className="h-screen bg-cover bg-fixed bg-party-3 relative">
+        <div className="w-full h-full bg-half-transparent justify-center items-center absolute z-10"></div>
+        <Header />
+        <div className="">
           { this.retornaExibicao() }
         </div>
       </div>

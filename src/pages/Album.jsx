@@ -42,14 +42,14 @@ class Album extends React.Component {
       return listaMusicas;
     });
     return (
-      <div className='flex flex-row flex-wrap'>
-        <p data-testid="artist-name" className="result">
+      <div className="sm:ml-7 md:p-6 lg:p-7">
+        <p data-testid="artist-name" className="text-white text-center sm:text-left sm:ml-4 text-2xl mt-4">
           { artista }
         </p>
-        <p data-testid="album-name" className="result">
+        <p data-testid="album-name" className="text-white text-center sm:text-left sm:ml-4 text-2xl my-5">
           { album }
         </p>
-        <div className="todas-as-musicas">
+        <div className="flex flex-row flex-wrap justify-center">
           { cadaMusica }
         </div>
       </div>

@@ -60,24 +60,22 @@ class MusicCard extends React.Component {
     const { carregando } = this.state;
     if (carregando === true) {
       return (
-        <div className="div-musicas-carregando">
-          <div>
-            Carregando...
-          </div>
-          <div id="icone-carregando">
-            <div className="icone-loading"> </div>
-            <div className="icone-loading"> </div>
-            <div className="icone-loading"> </div>
-          </div>
-        </div>);
+        <div className="bg-black m-2 w-11/12 sm:w-45% md:w-30% lg:w-23% text-white text-xl rounded flex flex-row justify-around items-center pr-4">
+        Carregando...
+        <div className="relative w-20 h-20 z-20 flex flex-row items-center justify-center mt-3">
+          <div className="loading w-3 h-3 bg-white rounded-full absolute"> </div>
+          <div className="loading w-3 h-3 bg-white rounded-full absolute"> </div>
+          <div className="loading w-3 h-3 bg-white rounded-full absolute"> </div>
+        </div>
+      </div>);
     }
     return (
-      <div className="div-musicas">
-        <div className="div-musicas-description">
+      <div className="bg-black m-2 w-11/12 sm:w-45% md:w-30% lg:w-23% text-white rounded flex flex-row-reverse justify-between">
+        <div className="div-musicas-description flex flex-col-reverse w-3/5 align-between justify-between">
           <audio
-            className="arquivo-de-audio"
             data-testid="audio-component"
             src={ previewUrl }
+            className="w-full p-2"
             controls
           >
             <track kind="captions" />
@@ -85,9 +83,9 @@ class MusicCard extends React.Component {
             <code>audio</code>
             .
           </audio>
-          <p>{ trackName }</p>
-          <label htmlFor={ trackId }>
+          <label htmlFor={ trackId } className="pb-1 px-2">
             <input
+            className="mr-1" 
               checked={ this.verificaSeFavorito() }
               type="checkbox"
               data-testid={ `checkbox-music-${trackId}` }
@@ -100,10 +98,9 @@ class MusicCard extends React.Component {
             />
             Favorita
           </label>
+          <p className="p-2">{ trackName }</p>
         </div>
-        <div className="div-musicas-image">
-          <img src={ artworkUrl100 } alt={ `arte do album da musica ${trackName}` } />
-        </div>
+          <img src={ artworkUrl100 } alt={ `arte do album da musica ${trackName}` } className="h-full w-2/5 object-cover rounded pl-2 py-2" />
       </div>
     );
   }

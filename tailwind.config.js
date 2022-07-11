@@ -26,6 +26,9 @@ module.exports = {
         '20p': '20vh',
         '80p': '80vh',
         '70': '17rem',
+        '23%': '23%',
+        '45%': '45%',
+        '30%': '30%',
       },
       backgroundImage: {
         'party': 'url("https://images.unsplash.com/photo-1486556396467-d83d2b23514b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")',

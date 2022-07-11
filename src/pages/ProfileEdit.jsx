@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from '../components/Header';
-import Usuario from '../components/Usuario';
+import Footer from '../components/Footer';
 import Carregando from '../components/Carregando';
 import { getUser, updateUser } from '../services/userAPI';
 
@@ -155,6 +155,7 @@ class ProfileEdit extends React.Component {
         <div>
           { this.retornaDadosUsuario() }
         </div>
+        <Footer />
       </div>
     );
   }

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Carregando from '../components/Carregando';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
+import Footer from '../components/Footer';
 
 class Search extends React.Component {
   state= {
@@ -150,6 +151,7 @@ class Search extends React.Component {
     const frase = 'Nenhum álbum foi encontrado';
     if (carregando === true) return (<Carregando bg="bg-party" />);
     return (
+      <div className="bg-black">
       <div data-testid="page-search" className="min-h-100vh relative bg-party bg-no-repeat bg-cover bg-center bg-fixed">
         <div className="w-full h-full bg-half-transparent justify-center items-center absolute z-10"></div>
         { this.retornaInputOuCarregando() }
@@ -157,6 +159,8 @@ class Search extends React.Component {
           ? <p className="text-4xl z-20 w-full text-center sm:pl-11 sm:text-left">{ frase }</p>
           : this.dadosEncontrados() }
       </div>
+          <Footer />
+          </div>
 
     );
   }

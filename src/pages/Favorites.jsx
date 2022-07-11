@@ -1,10 +1,9 @@
 import React from 'react';
 import Header from '../components/Header';
-import Usuario from '../components/Usuario';
 import { getFavoriteSongs, removeSong } from '../services/favoriteSongsAPI';
 import Carregando from '../components/Carregando';
 import MusicCard from '../components/MusicCard';
-import logo from '../images/trybe.png';
+import Footer from '../components/Footer';
 
 class Favorites extends React.Component {
   state = {
@@ -63,14 +62,15 @@ class Favorites extends React.Component {
       <div data-testid="page-favorites" className="min-h-100vh bg-cover bg-fixed bg-party-3 relative">
         <div className="w-full h-full bg-half-transparent justify-center items-center absolute z-10"></div>
         <Header />
-        <div className="md:p-6 lg:p-7 min-h-100vh">
-        <p data-testid="artist-name" className="text-white text-center text-2xl py-6 z-20 relative">
-          Favoritos
-        </p>
-        <div className="flex flex-row flex-wrap justify-center">
-          { this.retornaExibicao() }
+          <div className="md:p-6 lg:p-7 min-h-100vh">
+          <p data-testid="artist-name" className="text-white text-center text-2xl py-6 z-20 relative">
+            Favoritos
+          </p>
+          <div className="flex flex-row flex-wrap justify-center">
+            { this.retornaExibicao() }
+          </div>
         </div>
-      </div>
+          <Footer />
       </div>
 
     );

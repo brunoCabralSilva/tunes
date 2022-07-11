@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Header from '../components/Header';
 import MusicCard from '../components/MusicCard';
+import Footer from '../components/Footer';
 import getMusics from '../services/musicsAPI';
 
 class Album extends React.Component {
@@ -63,6 +64,7 @@ class Album extends React.Component {
         <div className="z-20 relative">
           { this.retornaMusicasRelacionadas() }
         </div>
+        <Footer />
       </div>
     );
   }

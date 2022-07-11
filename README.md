@@ -28,7 +28,7 @@
 <ul>
     <li>Fazer login;</li>
     <li>Pesquisar por uma banda ou artista;</li>
-    <li>Listar os álbuns disponíveis dessa banda ou artista</li>;
+    <li>Listar os álbuns disponíveis dessa banda ou artista;</li>
     <li>Visualizar as músicas de um álbum selecionado;</li>
     <li>Reproduzir uma prévia das músicas deste álbum;</li>
     <li>Favoritar e desfavoritar músicas;</li>
@@ -50,40 +50,45 @@
     <li>Utilizar o Switch do React Router;</li>
     <li>Usar o componente Redirect pra redirecionar para uma rota específica;</li>
     <li>Criar links de navegação na aplicação com o componente Link.</li>
-<ul>
+</ul>
 
 <h2 id="mapeamento">Mapeamento do site </h2>
 
 <ol>
 <li><h4>Login</h4></li> 
 
-<p>Lugar de acesso a diversas das informações do site. Por meio desta página, é possível ser direcionado para as páginas Dons, Rituais, Fetiches, Parceiros, Garou Nordeste e Matilha da Kombi.</p>
+<p>Primeira página da aplicação onde o usuário precisa digitar um login com mais de tês caracteres para que seja habilitado o botão de Login.</p>
 
-<p> </p>
+<li><h4>Pesquisar</h4></li>
 
-<li><h4>Pesquisar</h4></li> 
-<p>Na página é possível encontrar uma breve descrição do que são os dons, além de ser possível utilizar os filtros de busca, que podem ser maximixados para que se escolham itens de cada lista. As aludidas listas são cinco:</p>
-
-<br>
-<p>Ao clicar uma vez, o item da lista selecionado é adicionado e pode ser visualizado em um pop-up no canto superior direito da tela. Ele pode ser removido clicando novamente no ícone ou desmarcando o checkbox referente ao mesmo no pop-up.</p>
-<p>Ao clicar em buscar, a aplicação retorna uma lista com todos os dons que se adequam aos filtros selecionados.</p>
+<p>Área destinada para pesquisar por uma música, artista ou álbum. Ao clicar em pesquisar, todos os álbuns que correspondem ao que foi digitado são exibidos.</p>
 
 <li><h4>Álbum</h4></li>
-
+<p>Caso o usuário clique em algum dos ícones que foram exibidos como resultado da busca na ppágina de pesquisa, ele será direcionado para uma nova página onde serão exibidas todas as faixas do álbum relacionado ao ícone clicado. Nesta área é possível ouvir uma prévia de cada uma das faixas, além de favoritar ou desfavoritar a música. Ao acessar a página, automaticamente as músicas favoritadas anteriormente já são carregadas como favoritas (o checkbox relacionado à função de favoritar já vem como marcado).
 
 <li><h4>Favoritos</h4></li>
 
-<p>Nesta página é disponibilizada uma lista de todos os parceiros dos grupos ao qual os desenvolvedores pertencem ou possuem uma grande proximidade. É possível encontrar todos os links de contato com estes parceiros, além de uma breve descrição dos mesmos e uma imagem da logo que os representa.</p>
+<p>Nesta página são exibidas todas as músicas favoritadas pelo usuário. Também é possível ouvir uma prévia das músicas assim como na página álbuns. Caso o usuário desfavorite uma das músicas desmarcando o checkbox referente à função citada, automaticamente a música some da lista.</p>
 
 <li><h4>Perfil</h4></li>
 
-<p> Área do site ainda em processo de construção.</p>
+<p> Área destinada para a visualização dos dados do usuário, tais como: </p>
+<ul>
+    <li>Nome;</li>
+    <li>E-mail;</li>
+    <li>Descrição;</li>
+    <li>Imagem.</li>
+</ul>
+
+<p>Caso o usuário deseje adicionar ou alterar informações do seu cadastro, basta clicar no botão "Editar Perfil.</p>
 
 <li><h4>Editar Perfil</h4></li>
 
-<p> Área do site ainda em processo de construção.</p>
+<p> Página onde o usuário pode alterar todas as informações supracitadas. É importante destacas que, para inserir uma imagem, o usuário precisa inserir um link de uma imagem. Ao clicar em Editar Pefil, as alterações são efetivadas na aplicação.</p>
 
-<h2 id="tecnologias-utilizadas">Tecnologias utilizadas</h2>
+</ol>
+
+<h2 id="tecnologias-utilizadas">Tecnologias utilizadas:</h2>
 
 * `HTML5`
 * `CSS3`
@@ -98,9 +103,6 @@
 <h2 id="pessoas-envolvidas">Desenvolvedores e demais contribuidores</h2>
 
 * <strong>Bruno Gabryell Cabral da Silva</strong> - Desenvolvedor Web;
-* <strong>Thiago Lucas Martins da Silva</strong> - Tradutor e transcritor dos textos dos livros nos arquivos JSON;
-* <strong>Erika Emanuelly da Silva Cruz</strong> - Experiência do Usuário;
-* <strong>Patrick Cosme de Oliveira</strong> - Experiência do Usuário;
 
 <h2 id="conclusão">Conclusão</h2>
 

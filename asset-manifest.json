@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/trybe-14-tunes/static/css/main.d7fe947f.css",
-    "main.js": "/trybe-14-tunes/static/js/main.f21325fc.js",
+    "main.css": "/trybe-14-tunes/static/css/main.a5196afd.css",
+    "main.js": "/trybe-14-tunes/static/js/main.9ec8c230.js",
     "static/media/musica.jpg": "/trybe-14-tunes/static/media/musica.be9fa6caf392e7e5eb72.jpg",
     "index.html": "/trybe-14-tunes/index.html",
-    "main.d7fe947f.css.map": "/trybe-14-tunes/static/css/main.d7fe947f.css.map",
-    "main.f21325fc.js.map": "/trybe-14-tunes/static/js/main.f21325fc.js.map"
+    "main.a5196afd.css.map": "/trybe-14-tunes/static/css/main.a5196afd.css.map",
+    "main.9ec8c230.js.map": "/trybe-14-tunes/static/js/main.9ec8c230.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7fe947f.css",
-    "static/js/main.f21325fc.js"
+    "static/css/main.a5196afd.css",
+    "static/js/main.9ec8c230.js"
   ]
 }

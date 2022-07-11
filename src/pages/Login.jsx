@@ -23,7 +23,7 @@ class Login extends React.Component {
 
   mudaEstiloBotao = () => {
     const { habilitaBtnLogin } = this.state;
-    const classeBotao = habilitaBtnLogin ? 'bg-light text-dark' : 'bg-dark text-white';
+    const classeBotao = habilitaBtnLogin ? 'bg-light text-dark hover:bg-gray-400' : 'bg-dark text-white hover:bg-more-dark';
     return classeBotao;
   }
 
@@ -39,7 +39,7 @@ class Login extends React.Component {
   render() {
     const { habilitaBtnLogin, nomeDigitado, carregando } = this.state;
     if (carregando === true) {
-      return (<Carregando />);
+      return (<Carregando bg="bg-party" />);
     }
     return (
       <div data-testid="page-login" className="flex flex-row min-h-screen relative">
@@ -49,7 +49,7 @@ class Login extends React.Component {
         <div className="w-full flex items-center h-screen justify-center">
           <div className="lg:w-1/5 h-70 bg-white border drop-shadow-xl rounded flex flex-col justify-around items-center relative z-10">
             <div className="flex flex-row items-center justify-center w-full h-1/2">
-              <img src={require('../images/trybe-dark.png')} alt="" className="w-10 pb-3 mr-3 sm:mr-5" />
+              <img src={require('../images/trybe-dark.png')} alt="" className="w-10 pb-3 mr-3 sm:mr-58uhbn 89ui m" />
               <p className="text-dark text-2xl font-bold">TrybeTunes</p>
             </div>
             <div className="w-9/12 flex flex-col justify-center">

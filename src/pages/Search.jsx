@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
-import Usuario from '../components/Usuario';
 import Carregando from '../components/Carregando';
 import searchAlbumsAPI from '../services/searchAlbumsAPI';
-import logo from '../images/trybe-dark.png';
 
 class Search extends React.Component {
   state= {
@@ -103,7 +101,7 @@ class Search extends React.Component {
     });
     return (
       <div className="">
-        <p className="text-2xl sm:text-4xl z-20 w-full pl-5 sm:pl-16 sm:text-left text-white relative mb-3 z-20 sublinhado font-bold">
+        <p className="text-2xl sm:text-4xl z-20 text-center w-10/12 sm:pl-16 sm:text-left text-white relative mb-3 sublinhado font-bold mx-auto">
           {`Resultado de álbuns de: ${pesquisaSalva}` }
         </p>
         <div className="flex flex-row flex-wrap justify-center w-full z-20">
@@ -115,21 +113,10 @@ class Search extends React.Component {
 
   retornaInputOuCarregando = () => {
     const { habilitaBtnPesquisa, pesquisa, carregando } = this.state;
-    if (carregando === true) return (<Carregando />);
+    if (carregando === true) return (<Carregando bg="bg-party" />);
     return (
-      <div>
-        <nav className="flex flex-col items-center relative min-h-10p z-20">
-          <div className="flex flex-row justify-between w-full mt-3 sm:mt-1 z-20">
-            <div className='w-56'>
-            <img src={ logo } alt={ logo } className="sm:w-14 w-10 pl-4 object-contain" />
-            </div>
-            <Header classe="hidden sm:flex" />
-            <div className='w-56'>
-            <Usuario />
-            </div>
-          </div>
-          <Header classe="sm:hidden flex p-4 z-20" />
-        </nav>
+      <div className="">
+        <Header />
         <div data-testid="page-login" className="flex flex-col items-center justify-center min-h-30vh sm:min-h-30vh mt-5">
           <div className="lg:w-2/5 h-30p drop-shadow-xl rounded flex flex-col justify-around items-center relative z-10 rounded-l">
             <input
@@ -161,10 +148,10 @@ class Search extends React.Component {
   render() {
     const { vazio, carregando } = this.state;
     const frase = 'Nenhum álbum foi encontrado';
-    if (carregando === true) return (<Carregando />);
+    if (carregando === true) return (<Carregando bg="bg-party" />);
     return (
       <div data-testid="page-search" className="relative min-h-100vh bg-party bg-no-repeat bg-cover bg-center bg-fixed">
-        {/* <div className="absolute w-full h-full bg-half-transparent justify-center items-center absolute z-10"></div> */}
+        <div className="w-full h-full bg-half-transparent justify-center items-center absolute z-10"></div>
         { this.retornaInputOuCarregando() }
         { vazio === true
           ? <p className="text-4xl z-20 w-full text-center sm:pl-11 sm:text-left">{ frase }</p>

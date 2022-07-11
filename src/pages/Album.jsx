@@ -1,10 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from '../components/Header';
-import Usuario from '../components/Usuario';
 import MusicCard from '../components/MusicCard';
 import getMusics from '../services/musicsAPI';
-import logo from '../images/trybe.png';
 
 class Album extends React.Component {
   state = {
@@ -27,11 +25,12 @@ class Album extends React.Component {
 
   retornaMusicasRelacionadas = () => {
     const { musicasRelacionadas, artista, album } = this.state;
-    const cadaMusica = musicasRelacionadas.map((musica) => {
+    const cadaMusica = musicasRelacionadas.map((musica, index) => {
       let listaMusicas = '';
       if (musica.trackName) {
         listaMusicas = (
           <MusicCard
+            key = { index }
             type="pesquisa"
             objetoCompleto={ musica }
             previewUrl={ musica.previewUrl }
@@ -43,7 +42,7 @@ class Album extends React.Component {
       return listaMusicas;
     });
     return (
-      <div>
+      <div className='flex flex-row flex-wrap'>
         <p data-testid="artist-name" className="result">
           { artista }
         </p>
@@ -59,15 +58,14 @@ class Album extends React.Component {
 
   render() {
     return (
-      <div data-testid="page-album">
-        <div className="barra-superior">
-          <img src={ logo } alt={ logo } className="trybe-barra-superior" />
-          <nav className="navigate">
-            <Header />
-            <Usuario />
-          </nav>
+      <div className="min-h-screen bg-cover bg-fixed bg-party-2 relative">
+        <div className="bg-half-transparent w-full h-full absolute z-10"></div>
+        <div className="z-20 relative">
+          <Header />
         </div>
-        { this.retornaMusicasRelacionadas() }
+        <div className="z-20 relative">
+          { this.retornaMusicasRelacionadas() }
+        </div>
       </div>
     );
   }

@@ -18,6 +18,7 @@ module.exports = {
         'half-light': 'rgb(255, 255, 255, 0.2)',
         'light': '#d1daed',
         'dark': '#0D0F26',
+        'more-dark': '#070813',
       },
       spacing: {
         '40p': '40%',
@@ -27,7 +28,8 @@ module.exports = {
         '70': '17rem',
       },
       backgroundImage: {
-        'party': "",
+        'party': 'url("https://images.unsplash.com/photo-1486556396467-d83d2b23514b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")',
+        'party-2': 'url("https://images.unsplash.com/photo-1549046675-dd779977de88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=943&q=80")',
       }
     },
   },

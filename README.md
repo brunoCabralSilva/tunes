@@ -1,19 +1,29 @@
 <h1 align="center">Trybe Tunes</h1>
 
-<p align="center">Décimo quarto projeto de trybe com o objetivo de avaliação em diversos quesitos do curso, sendo eles: 
+<p align="center">Aplicação desenvolvida como critério avaliativo da Trybe com a função de servir como plataforma de música para o usuário, que pode pesquisar e favoritar músicas, além de editar informações de cadastro.
 
-<ul>
-    <li>Fazer requisições e consumir dados vindos de uma API;</li>
-    <li>Utilizar os ciclos de vida de um componente React;</li>
-    <li>Utilizar a função setState de forma a garantir que um determinado código só é executado após o estado ser   atualizado;</li>
-    <li>Utilizar o componente BrowserRouter corretamente;</li>
-    <li>Criar rotas, mapeando o caminho da URL com o componente correspondente, via Route;</li>
-    <li>Utilizar o Switch do React Router;</li>
-    <li>Usar o componente Redirect pra redirecionar para uma rota específica;</li>
-    <li>Criar links de navegação na aplicação com o componente Link.</li>
-<ul>
+<h3 align="center">https://brunocabralsilva.github.io/trybe-14-tunes/</h3>
 
-<p>Para tal, foi desenvolvida uma aplicação capaz de reproduzir músicas das mais variadas bandas e artistas, além de uma lista de músicas favoritas e possibilidade de edição de perfil da pessoa usuária logada. Dentre todas as funções da aplicação, destacam-se:</p>
+![Tela Inicial da Aplicação](src/images/login.png)
+
+![Menu principal](src/images/interno.png)
+
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
+
+<h2> Índice</h2>
+
+* [Descrição do Projeto](#descrição-do-projeto)
+* [Mapeamento do Site](#mapeamento)
+* [Tecnologias utilizadas](#tecnologias-utilizadas)
+* [Desenvolvedores e demais contribuidores](#pessoas-envolvidas)
+* [Conclusão](#conclusão)
+
+
+<h2 id="descrição-do-projeto">Descrição do Projeto</h2>
+
+<p>O Trybe Tunes foi o décimo quarto projeto realizado na trybe durante o módulo de Front-End, onde foi desenvolvida uma aplicação que cumpria diversas funções, sendo cada uma delas:<p>
 
 <ul>
     <li>Fazer login;</li>
@@ -27,101 +37,51 @@
     <li>Editar o perfil da pessoa logada.</li>
 </ul>
 
-
-<h3 align="center">https://brunocabralsilva.github.io/trybe-14-tunes/login.png</h3>
-
-![Tela Inicial da Aplicação](src/images/menu/)
-
-![Menu principal](src/images/menu/apresentation02.png)
-
-<p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+<p>
+    Com o intuito de alcançar os objetivos do projeto, foram utilizados diversos conceitos que envolvem os seguintes pontos abaixo:
 </p>
 
-<h2> Índice</h2>
-
-* [Introdução](#intro)
-* [Descrição do Projeto](#descrição-do-projeto)
-* [Mapeamento do Site](#mapeamento)
-* [Tecnologias utilizadas](#tecnologias-utilizadas)
-* [Desenvolvedores e demais contribuidores](#pessoas-envolvidas)
-* [Conclusão](#conclusão)
-
-<h2 id="intro">Introdução</h2>
-
-<p>Role-playing game, também conhecido como RPG, é um tipo de jogo em que os jogadores assumem papéis de personagens e criam narrativas geralmente colaborativas. O progresso de um jogo se dá de acordo com um sistema de regras predeterminado, dentro das quais os jogadores podem improvisar livremente. É aí que entra o sistema de RPG <strong>World of Darkness</strong>.</p>
-
-<p><strong>World of Darkness</strong> é nome dado a dois universos ficcionais relacionados, mas distintos, criados como configurações de campanha para role-playing games de horror originalmente da editora estadunidense White Wolf. O primeiro foi concebido por Mark Rein-Hagen, enquanto o segundo foi projetado por várias pessoas da White Wolf Gaming Studio, que Rein-Hagen ajudou a criar.</p>
-
-<p>Dentro do <strong>World of Darkness</strong> o jogo de <strong>Lobisomem: O Apocalipse</strong> é um dos muitos jogos possíveis e existentes na franquia, tendo sido este publicado no Brasil pela Devir Livraria. É um dos mais conhecidos títulos da série e usa o sistema Storyteller para o desenvolvimento e a interpretação dos fatos e eventos.</p>
-
-<p>Por existir uma quantidade enorme de livros de <strong>Lobisomem: O Apocalipse</strong> como resultado de complementos das versões básicas do cenário, fica difícil ou no mínimo moroso pesquisar por entre estes informações a serem adicionadas nas fichas de cada personagem. Visando este déficit, decidimos criar uma aplicação que ajude nessas buscas, economizando tempo dos jogadores e auxiliando de forma eficaz em encontrar as informações requeridas.</p>
-
-<h2 id="descrição-do-projeto">Descrição do Projeto</h2>
-
-<p>O Guia das Matilhas é um projeto onde, por meio de pouquíssimo ou quase nenhum esforço, o usuário poderá encontrar listas de dons, fetiches, rituais, entre outras informações, podendo filtrá-las para visualizar apenas o que busca.
-</p>
+<ul>
+    <li>Fazer requisições e consumir dados vindos de uma API;</li>
+    <li>Utilizar os ciclos de vida de um componente React;</li>
+    <li>Utilizar a função setState de forma a garantir que um determinado código só é executado após o estado ser   atualizado;</li>
+    <li>Utilizar o componente BrowserRouter corretamente;</li>
+    <li>Criar rotas, mapeando o caminho da URL com o componente correspondente, via Route;</li>
+    <li>Utilizar o Switch do React Router;</li>
+    <li>Usar o componente Redirect pra redirecionar para uma rota específica;</li>
+    <li>Criar links de navegação na aplicação com o componente Link.</li>
+<ul>
 
 <h2 id="mapeamento">Mapeamento do site </h2>
 
 <ol>
-<li><h4>Menu Principal</h4></li> 
+<li><h4>Login</h4></li> 
 
 <p>Lugar de acesso a diversas das informações do site. Por meio desta página, é possível ser direcionado para as páginas Dons, Rituais, Fetiches, Parceiros, Garou Nordeste e Matilha da Kombi.</p>
 
 <p> </p>
 
-<li><h4>Dons</h4></li> 
+<li><h4>Pesquisar</h4></li> 
 <p>Na página é possível encontrar uma breve descrição do que são os dons, além de ser possível utilizar os filtros de busca, que podem ser maximixados para que se escolham itens de cada lista. As aludidas listas são cinco:</p>
 
-<ul>
-<li>Raça;</li>
-<li>Tribo;</li>
-<li>Augúrio;</li>
-<li>Posto;</li>
-<li>Livro.</li>
-</ul>
 <br>
 <p>Ao clicar uma vez, o item da lista selecionado é adicionado e pode ser visualizado em um pop-up no canto superior direito da tela. Ele pode ser removido clicando novamente no ícone ou desmarcando o checkbox referente ao mesmo no pop-up.</p>
 <p>Ao clicar em buscar, a aplicação retorna uma lista com todos os dons que se adequam aos filtros selecionados.</p>
 
-<li><h4>Rituais</h4></li>
+<li><h4>Álbum</h4></li>
 
-<p> Área do site ainda em processo de construção.</p>
 
-<li><h4>Fetiches</h4></li>
-
-<p> Área do site ainda em processo de construção.</p>
-
-<li><h4>Parceiros</h4></li>
+<li><h4>Favoritos</h4></li>
 
 <p>Nesta página é disponibilizada uma lista de todos os parceiros dos grupos ao qual os desenvolvedores pertencem ou possuem uma grande proximidade. É possível encontrar todos os links de contato com estes parceiros, além de uma breve descrição dos mesmos e uma imagem da logo que os representa.</p>
 
-<li><h4>Garou Nordeste</h4></li>
+<li><h4>Perfil</h4></li>
 
 <p> Área do site ainda em processo de construção.</p>
 
-<li><h4>Matilha da Kombi</h4></li>
+<li><h4>Editar Perfil</h4></li>
 
 <p> Área do site ainda em processo de construção.</p>
-
-<li><h4>Tribos</h4></li>
-
-<p> Área do site onde são disponibilizadas as dezessete tribos para consulta. Em uma lista no formato carrossel, o usuário poderá navegar entre as imagens de cada tribo, além de, no futuro, ter acesso a informações sobre a tribo ao clicar em uma delas.</p>
-
-<li><h4>Augúrios</h4></li>
-
-<p> Área do site onde são disponibilizados os cinco Augúrios para consulta. Em uma lista no formato carrossel, o usuário poderá navegar entre as imagens de cada augúrio, além de, no futuro, ter acesso a informações ao clicar em uma delas.</p>
-
-<li><h4>Raças</h4></li>
-
-<p> Área do site onde são disponibilizadas as três raças para consulta. Em uma lista no formato carrossel, o usuário poderá navegar entre as imagens de cada raça, além de, no futuro, ter acesso a informações e pontos de vista dos autores ao clicar em um deles.</p>
-
-<li><h4>Quem Somos</h4></li>
-
-<p> Lugar reservado para falarmos um pouco a respeito de quem somos, quem são nossos grupos e como tudo começou, além de serem compartilhados todos os nossos links de contato.</p>
-
-</ol>
 
 <h2 id="tecnologias-utilizadas">Tecnologias utilizadas</h2>
 
@@ -130,9 +90,9 @@
 * `Javascript (ECMAScript 2018)`
 * `React`
 * `React Icons`
+* `Tailwind`
 * `React Router Dom`
 * `Framer Motion`
-* `Bootstrap CSS`
 * `Font Awesome`
 
 <h2 id="pessoas-envolvidas">Desenvolvedores e demais contribuidores</h2>

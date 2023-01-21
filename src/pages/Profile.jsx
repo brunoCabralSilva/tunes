@@ -37,7 +37,7 @@ class Profile extends React.Component {
           <img
             src={ dadosUsuario.image }
             data-testid="profile-image"
-            alt="imagem de perfil"
+            alt=""
             className="w-56 mx-auto h-56 rounded-full object-cover"
           />
         <div className="flex flex-col">

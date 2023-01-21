@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/tunes/static/css/main.ecdf641a.css",
-    "main.js": "/tunes/static/js/main.099236bc.js",
+    "main.js": "/tunes/static/js/main.237114f2.js",
     "static/media/musica.jpg": "/tunes/static/media/musica.be9fa6caf392e7e5eb72.jpg",
     "index.html": "/tunes/index.html",
     "main.ecdf641a.css.map": "/tunes/static/css/main.ecdf641a.css.map",
-    "main.099236bc.js.map": "/tunes/static/js/main.099236bc.js.map"
+    "main.237114f2.js.map": "/tunes/static/js/main.237114f2.js.map"
   },
   "entrypoints": [
     "static/css/main.ecdf641a.css",
-    "static/js/main.099236bc.js"
+    "static/js/main.237114f2.js"
   ]
 }

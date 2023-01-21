@@ -1,4 +1,4 @@
-<h1 align="center">Trybe Tunes</h1>
+<h1 align="center">Tunes</h1>
 
 <p align="center">Aplicação desenvolvida como critério avaliativo da Trybe com a função de servir como plataforma de música para o usuário, que pode pesquisar e favoritar músicas, além de editar informações de cadastro.
 

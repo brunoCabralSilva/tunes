@@ -2,7 +2,7 @@
 
 <p align="center">Aplicação desenvolvida como critério avaliativo da Trybe com a função de servir como plataforma de música para o usuário, que pode pesquisar e favoritar músicas, além de editar informações de cadastro.
 
-<h3 align="center">https://brunocabralsilva.github.io/trybe-14-tunes/</h3>
+<h3 align="center">https://brunocabralsilva.github.io/tunes/</h3>
 
 ![Tela Inicial da Aplicação](src/images/login.png)
 

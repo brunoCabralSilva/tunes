@@ -15,7 +15,7 @@ function App() {
     <AnimateSharedLayout>
       <AnimatePresence>
         <Switch location={location} key={location.key}>
-        <Route exact path="/trybe-14-tunes" component={ Login } />
+        <Route exact path="/" component={ Login } />
           <Route path="/search" component={ Search } />
           <Route exact path="/album/:id" component={ Album } />
           <Route path="/favorites" component={ Favorites } />
